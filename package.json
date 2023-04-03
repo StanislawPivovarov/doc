@@ -1,12 +1,13 @@
 {
 	"private": true,
 	"name": "headmade-doc",
+	"homepage": "https://stanislawpivovarov.github.io/doc",
 	"scripts": {
 		"start": "dumi dev",
 		"build": "dumi build",
 		"clean": "rm -rf dist",
 		"prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-		"deploy": "dumi build && cp CNAME dist/ && cp static/* dist && gh-pages -b main -o headmade-doc -d dist"
+		"deploy": "gh-pages -d dist"
 	},
 	"main": "dist/index.js",
 	"module": "dist/index.esm.js",
